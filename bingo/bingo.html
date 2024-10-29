@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bingo Virtual</title>
+    <link rel="stylesheet" href="bingo.css">
+</head>
+<body>
+    <div id="background"></div>
+    <div id="content">
+        <!-- Logo del juego -->
+        <img src="bingo-1.jpg" alt="Logo de Bingo" id="logoBingo">
+        
+        <!-- Título del juego -->
+        <h1>Bingo Virtual</h1>
+
+        <!-- Botón para generar el próximo número -->
+        <button id="generarNumero">Generar Número</button>
+
+        <!-- Muestra el número actual generado -->
+        <p id="numeroActual">Número del bingo: 00</p>
+
+        <!-- Lista de números generados -->
+        <h3>Números generados</h3>
+        <ul id="listaNumeros"></ul>
+
+        <!-- Botón para cantar bingo -->
+        <button id="cantarBingoButton">¡Han cantado Bingo!</button>
+
+        <!-- Botón para finalizar el juego -->
+        <button id="finalizarJuegoButton">Finalizar Juego</button>
+
+        <!-- Botón para reiniciar el juego -->
+        <button id="reiniciarJuego">Reiniciar Juego</button>
+
+        <!-- Mensaje final del juego -->
+        <p id="mensajeFinal"></p>
+
+        <!-- Confirmación de acciones -->
+        <div id="confirmacion" style="display: none;">
+            <p id="confirmacionTexto"></p>
+            <button id="confirmacionBtn">Aceptar</button>
+        </div>
+
+        <!-- Botón para generar archivo PDF (oculto inicialmente) -->
+        <div id="opcionesGanador" style="display: none;">
+            <button id="generarPDFButton">Generar PDF con cartones</button>
+            <button id="verCartonesButton">Ver cartones almacenados</button>
+        </div>
+    </div>
+
+    <!-- Vinculación con el archivo JavaScript -->
+    <script src="bingo.js"></script>
+</body>
+</html>
